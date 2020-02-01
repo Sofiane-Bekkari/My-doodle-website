@@ -1,0 +1,792 @@
+/* Variable */
+:root {
+    --primary-color: #FF5678;
+    --primary-sec-color: rgba(255, 86, 120, 0.842);
+    --secondary-color: rgb(70, 154, 233);
+    --secondary-sec-color: rgb(107, 177, 241);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header {
+    border-bottom: solid 0px rgb(243, 243, 240);
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    box-shadow: 0px 1px 3px rgb(77, 74, 74);
+}
+.logo {
+    width: 35%;
+    margin: 1em ;
+}
+
+/* Burger Style */
+.burger {
+    padding: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    transition: all .5s;
+}
+
+.line , .line , .line {
+    border: solid;
+    border-radius: 5px;
+    width: 20px;
+    margin: 2px;
+    transition: all .5s ease;
+}
+.change .link1 {
+    transform: rotate(45deg) translate(4px,5px);
+    transition: all .5s;
+}
+.change .link2 {
+    opacity: 0;
+    transition: all .5s;
+}
+.change .link3  {
+    transform: rotate(-45deg) translate(5px,-6px);
+    transition: all .5s;
+}
+
+/*  NavBar */
+nav {
+    position: absolute;
+    width: 50%;
+    top: 66px;
+    right: 0px;
+    margin: 0;
+    padding: 10px;
+    height: 50vh;
+    background: #fff;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 1px 3px rgb(77, 74, 74);
+    transform: translate3d(110%,0,0);
+    transition: all 1s ease;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    padding: .5rem;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+a:hover {
+    color: var(--primary-sec-color);
+}
+/* Show NavBar */
+.show-mobile {
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    width: 50%;
+    transform: translate3d(0,0,0);
+    transition: all 1s ease;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*  Part Showcase  */
+.container {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+#showcase {
+    margin-top: 3rem;
+}
+#showcase h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+h1 span {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: bolder;
+}
+#showcase p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#girl {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.btn {
+    border: solid 2px;
+    padding: .8rem 1.5rem;
+    font-size: 1.2rem;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #f5f5f5;
+    outline: none;
+    background: var(--primary-color);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: var(--primary-sec-color);
+    transform: translateY(-5px);
+}
+.btn:active {
+    transform: translateY(0px);
+}
+
+#showcase button {
+    margin-bottom: 2em;
+}
+
+
+/*** Second Part Blue Container ***/
+
+#blue-container {
+    margin-top:3em;
+}
+#blue-sky {
+    background: linear-gradient(180deg,
+    #38a4bc 0%, rgba(196,196,196,0) 100%);
+    border-radius: 8%;
+}
+#blue-container .container h2 {
+    color:  rgba(242, 242, 242, 0.78);
+    font-size: 2em;
+    padding-top:1em ;
+}
+#blue-container .planet {
+    width: 35%;
+    margin-right: 9em;
+}
+#blue-container p {
+    font-size: 1em;
+    font-style: oblique;
+}
+.fly-girl {
+    width: 45%;
+    margin-left: 9em;
+    margin-top: 2em;
+    transform: rotate(-5deg);
+}
+.swing {
+    width: 80%;
+    margin-top: 2em;
+}
+#blue-container h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color:var(--primary-sec-color);
+    margin-bottom: 4em;
+    
+}
+#green-container h2 span {
+    margin-top: 5em;
+    color: var(--primary-sec-color);
+    font-size: 1.2em;
+}
+#green-container p {
+    font-style: oblique;
+}
+.doodle {
+    width: 50%;
+}
+
+/** Green linear Color in Bottom **/
+#green-earth {
+    background: linear-gradient(180deg,
+    rgba(227, 242, 234, 0) 41.15%,
+    rgba(62, 193, 122, 0.88) 98.96%);
+    border-radius: 35px;
+    padding-bottom: 6em;
+}
+
+/** Therid Part **/
+.coffee {
+    width: 50%;
+    margin: 3em 0 0 .5em;
+    float: left;
+}
+.keyboard {
+    margin: 4em 0 0 .5em;
+}
+h3 {
+    margin-top: 3em;
+    
+}
+#action h3 {
+    clear: both;
+    margin: 1em;
+}
+#cta {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    width: 90%;
+    margin:0 auto;
+}
+#cta button {
+    margin: 1em;
+}
+#cta img {
+    width: 90px;
+    align-self: center;
+
+}
+h3 span { 
+    color:var(--primary-sec-color);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+h4 {
+    font-style: oblique;
+}
+h4 span { 
+    color:#38a4bc;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.design {
+    margin-top: 1.2em ;
+}
+
+/** Footer Part  **/
+#footer-area {
+    margin-top: 2rem;
+    background: #B1B2B4;
+    height: 70vh;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    color: #ffffff;
+}
+#footer-area h2 {
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-top: 1em;
+}
+form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+form label {
+    margin-top: .5em;
+    padding: 0;
+    width: 52%;
+    text-align: left;
+}
+form input {
+    font-family:'Montserrat', sans-serif; ;
+    width: 50%;
+    border-radius: 10px;
+    outline: none;
+    padding: .7em .5em;
+}
+input[type="submit"]{
+    background: rgb(62, 193, 121);
+    border: none;
+    margin: 2em 0 2em;
+    width: 53%;
+    padding: .7em 0;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(87, 82, 82, 0.651);
+    transition: ease 1s;
+}
+input[type="submit"]:hover {
+    background: rgba(62, 193, 121, 0.788) ;
+    color: rgba(27, 27, 27, 0.548);
+    cursor: pointer;
+}
+.social {
+    width: 10%;
+    margin: .2em 0 1em 0;
+    padding-right: .5em;
+    color: black;
+    cursor: pointer;
+}
+.social:hover {
+    color: var(--secondary-sec-color);
+}
+footer p {
+    font-size: 1.1em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+footer p , a , span {
+    color: black;
+    text-decoration: none;
+}
+footer a , span{
+    padding-bottom: .5em;
+}
+
+
+/**  Now we begien use Media Queiry **/
+
+
+
+@media (min-width:500px) {
+
+    #head {
+        height: 8vh;
+    }
+    nav {
+        top: 61px;
+    }
+    .logo {
+        width: 100px;
+        margin: 1rem 1rem;
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    #title {
+        margin-top: 3rem;
+        box-sizing: border-box;
+        padding: 0 2rem;
+    }
+    #title h1 {
+        display: block;
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    #showcase #girl {
+        display: block;
+        width: 60%;
+        height: 35vh;
+        margin: 0 auto;
+
+    }
+}
+
+/***  Second Media  ***/
+  
+@media (min-width:760px) {
+    #head {
+        padding: 0 2rem;
+    }
+    .burger {
+        right: 3%;
+    }
+    #showcase {
+        position: relative;
+    }
+    #showcase .container{
+        margin-top: 2rem;
+        display: flex;
+        box-sizing: border-box;
+        margin-bottom: .5em;
+    
+    }
+    #showcase #title {
+        width: 50%;
+        height: 40vh;
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+        justify-content: center;
+        padding: .2em;
+    
+    }
+    #showcase h1 {
+        width: 100%;
+        text-align: left;
+        font-size: 2em;
+        padding: 0;
+        margin: 0;
+
+    }
+    #showcase p {
+        margin: 0;
+        text-align: left;
+        padding-top: .5rem;
+        font-size: 1.1em;
+    }
+    #showcase #girl {
+        width: 50%;
+        margin: 0 0 0 0;
+        height: 50vh;
+    }
+    #showcase .btn {
+        position: absolute;
+        top: 60%;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    
+    #blue-container {
+        margin-top: 1.2em;
+    }
+    #blue-sky h2 {
+        margin: 0em;
+    }
+    #blue-sky img.planet {
+        padding-right: 15em;
+        width: 25%;
+        
+    }
+    #blue-sky img.fly-girl {
+        width: 35%;
+        margin-right: -10em;
+        
+    }
+    #blue-container img.swing {
+        padding-left: 2em;
+        float: left;
+        width: 45%;
+    }
+    #blue-sky h3 {
+        float: left;
+    } 
+    #green-container h2 {
+        padding: 2em;
+        margin: 2em;
+        clear: both;
+    }
+    #green-container {
+        margin-top: 2em;
+    }
+    #green-container #d-desk {
+        display: flex;
+    }
+    div .doodle {
+        width: 75%;
+    }
+    #d-desk p {
+        padding: .7em;
+    }
+    #kaffee {
+        display: flex;
+        padding: .5em;
+        flex-flow: column;
+        align-items:center;
+        width: 45%;
+    }
+    #kaffee .coffee {
+        width: 100%;
+        margin: 5em 0 0 0;
+    }
+    #kaffee .keyboard{
+        margin-top: .5em;
+
+    }
+    #kaffee h4 {
+        margin: .2em;
+    }
+    #cta {
+        width: 50%;
+        height: 50vh;
+        padding: 3em 0 2em 0;
+        float: right;
+        margin-top: -26em;
+        margin-right: 1em;
+        clear: both;
+    }
+    #cta h3 {
+        font-size: 1.5em;
+        margin-bottom: 2.8em;
+    }
+    #cta img {
+        margin-top: 3.8em;
+    }
+    #footer-area #info-1 input[type="submit"] {
+        width: 53%;
+    
+    }
+}
+
+
+/**   Another Media Large 1   **/
+
+    /** Media Queiry at 900PX **/
+    @media screen and (min-width:900px){
+        #showcase #girl {
+            width: 50%;
+            height: 50vh;
+        }
+        /* SHOW Menu Style */
+        .burger {
+            display: none;
+        }
+        .show-desk {
+            display: inline;
+            background: none;
+            transform: translate3d(0,0,0);
+            box-shadow: none;
+        }
+        nav {
+            display: inline-block;
+            height: 8vh;
+            top: 0;
+            margin-right: 1rem;
+            padding: 0;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 8vh;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 0;
+        }
+        nav li {
+            position: relative;
+        }
+        
+        #showcase h1 {
+            font-size: 2.5em;
+        }
+        #showcase button {
+            top: -85px;
+        }
+        #showcase button a {
+            padding: .8em 4em;
+        }
+        #action .container {
+            display: flex;
+        }
+        #kaffee {
+            margin-left: 2em;
+        }
+        #cta {
+            margin:2em;
+            width: 80%;
+            height: 60vh;
+        }
+        #cta button a{
+            padding: .8em 4em;
+        }
+        #cta h3 {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        #cta img {
+            margin-top: em;
+        }
+        #footer-area .container {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 2rem;
+        }
+        #info {
+            width: 40%;
+            height: 50%;
+            margin-top: 20vh;
+        }
+        #info-1 {
+            width: 60%;
+        }
+    }
+
+    /***  Desktop Size Media  ***/
+    @media (min-width:1000px){
+
+        #head {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .logo {
+            margin: 0;
+            padding: 1rem 0;
+        }
+        nav ul {
+            width: 90%;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        #showcase .btn {
+            top: 65%;
+            width: 20%;
+            font-size: 1.2rem;
+        }
+        #blue-container .container {
+            width: 90%;
+            margin-top: 2rem;
+        }
+        #blue-container #blue-sky {
+            border-top: solid 2px rgba(0, 0, 0, 0.068);
+            border-bottom: none;
+            width: 100%;
+        }
+        #showcase h1 {
+            font-size: 2.7em;
+
+        }
+        #showcase p {
+            font-size: 1.3em;
+
+        }
+        #blue-container img.planet {
+            width: 230px;
+            height: 32vh;
+            margin-left: -25em;
+            margin-top: 1em;
+            padding: 0;
+            transition: 2s ease;
+        }
+        #blue-sky #warp h2 {
+            font-size: 2.3em;
+            
+        }
+        #blue-container p {
+            font-size: 1.2em;
+        }
+        #blue-container img.fly-girl {
+            margin-right: -18em;
+            transition: 2s ease;
+        }
+
+        /* Some Animation Fly Girl */
+
+        #blue-sky img.planet:hover {
+            border: none;
+            cursor: pointer;
+            transform: rotate(15deg);
+        }
+        img.fly-girl:hover{
+            cursor: pointer;
+            transform: rotate(-15deg);
+        }
+
+        #blue-container img.swing {
+            transition: .5s linear ;
+        }
+        #blue-container img.swing:hover {
+            transform: rotate(deg);
+            width:46%;
+            cursor: pointer;
+        }
+        #action .coffee {
+            transition: linear 1s;
+        }
+        #action .coffee:hover {
+            cursor: pointer;
+            transform: rotate(-15deg);
+        }
+        /**  END IT  **/
+
+
+        #blue-container h3 {
+            font-size: 2.3em;
+        }
+        #green-container h2 {
+            font-size:1.8em
+        }
+        #blue-container #warp {
+            width: 90%;
+            margin: 0 auto; 
+        }
+        
+        #green-container .container{
+            width: 90%;
+        }
+        #green-container #green-earth {
+            width: 100%;
+            border-bottom: solid rgba(19, 18, 18, 0.205);
+        }
+        #d-desk p {
+            font-size: 1.2em;
+        }
+        #green-container #d-desk {
+            width: 90%;
+            margin: 0 auto;
+        }
+        #cta .btn {
+            width: 50%;
+            margin: 0 auto;
+        }
+     
+    }
+    /**  Last Lagest Media  **/
+
+    @media (min-width:1350px) {
+        #showcase #girl {
+            height: 65vh;
+        }
+        #title {
+            margin-top: 2rem;
+        }
+        #showcase h1 {
+            font-size: 3.2em;
+            margin-top: 5rem;
+        }
+        #showcase p {
+            font-size: 1.5em;
+        }
+        .btn {
+           padding: 1rem 2rem;
+           top: 70%;
+           font-size: 1.3rem;
+        }
+        #showcase {
+            margin-bottom: 3em ;
+        }
+        #blue-container img.planet  {
+            width: 25%;
+            height: 40vh;
+            margin-right: 25rem;
+        }
+        #blue-container img.fly-girl  {
+            margin-left: 25em;
+            width: 30%;
+            height: 40vh;
+        }
+        #blue-container #blue-sky h2 {
+            font-size: 3em;
+        }
+        #blue-container p {
+            font-size: 1.3em;
+        }
+        #blue-container h3 {
+            font-size: 3em;
+        }
+        #green-container h2 {
+            font-size: 2.5em;
+        }
+        #green-container p {
+            font-size: 1.2em;
+        }
+        #cta h3 {
+            font-size: 2.2em;
+
+        }
+        #footer-area .container {
+            margin-top: 2em;
+        }
+        
+    }
