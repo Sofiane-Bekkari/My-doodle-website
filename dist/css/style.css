@@ -87,6 +87,9 @@ ul {
     align-items: center;
     justify-content: space-around;
 }
+a {
+    transition: all .5s ease;
+}
 a:hover {
     color: var(--primary-sec-color);
 }
@@ -348,6 +351,11 @@ footer p , a , span {
 }
 footer a , span{
     padding-bottom: .5em;
+    transition: all .5s;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #555;
 }
 
 
