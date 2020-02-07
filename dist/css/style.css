@@ -572,6 +572,7 @@ footer a:hover {
             height: 8vh;
             top: 0;
             margin-right: 1rem;
+            font-size: 1rem;
             padding: 0;
         }
         nav ul {
@@ -590,6 +591,9 @@ footer a:hover {
         
         #showcase h1 {
             font-size: 2.5em;
+        }
+        #showcase p {
+            margin-bottom: 3rem;
         }
         #showcase button {
             top: -85px;
@@ -645,6 +649,9 @@ footer a:hover {
             margin: 0;
             padding: 1rem 0;
         }
+        nav {
+            font-size: 1.1rem;
+        }
         nav ul {
             width: 90%;
         }
@@ -672,11 +679,12 @@ footer a:hover {
         }
         #showcase p {
             font-size: 1.3em;
+            width: 100%;
 
         }
         #blue-container img.planet {
-            width: 250px;
-            height: 32vh;
+            width: 200px;
+            height: 28vh;
             margin-left: -25em;
             margin-top: 1em;
             padding: 0;
@@ -744,6 +752,7 @@ footer a:hover {
         }
         #d-desk p {
             font-size: 1.2em;
+            line-height: 1.4;
         }
         #green-container #d-desk {
             width: 90%;
@@ -765,11 +774,12 @@ footer a:hover {
             margin-top: 2rem;
         }
         #showcase h1 {
-            font-size: 3.2em;
+            font-size: 3.4em;
             margin-top: 5rem;
         }
         #showcase p {
             font-size: 1.5em;
+            margin-top: 1rem;
         }
         .btn {
            padding: 1rem 2rem;
@@ -790,7 +800,7 @@ footer a:hover {
             height: 40vh;
         }
         #blue-container #blue-sky h2 {
-            font-size: 3em;
+            font-size: 2.8em;
         }
         #blue-container p {
             font-size: 1.3em;
