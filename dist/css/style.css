@@ -372,6 +372,10 @@ footer a:hover {
     color: #555;
 }
 
+footer a#my-link:hover  {
+    text-decoration: none;
+}
+
 
 /**  Now we begien use Media Queiry **/
 
@@ -383,7 +387,7 @@ footer a:hover {
         height: 8vh;
     }
     nav {
-        top: 61px;
+        top: 66px;
     }
     .logo {
         width: 100px;
@@ -420,6 +424,17 @@ footer a:hover {
     }
     .burger {
         right: 3%;
+    }
+    nav {
+        /*FIX OPACITY ON CLOSE NAVBAR*/
+        z-index: 99;
+    }
+    .show-mobile {
+        position: absolute;
+        background: #fff;
+        width: 35%;
+        transform: translate3d(0,0,0);
+        transition: all 1s ease;
     }
     #showcase {
         position: relative;
@@ -458,6 +473,7 @@ footer a:hover {
     #showcase #girl {
         width: 50%;
         margin: 0 0 0 0;
+        z-index: 0;
         height: 50vh;
     }
     #showcase .btn {
@@ -508,43 +524,48 @@ footer a:hover {
     #d-desk p {
         padding: .7em;
     }
+    #action .container {
+        margin-top: 3rem;
+        width: 80%;
+        display: flex;
+    }
     #kaffee {
         display: flex;
-        padding: .5em;
+        height: 50vh;
+        flex-direction: column;
         flex-flow: column;
-        align-items:center;
+        align-items: center;
         width: 45%;
     }
     #kaffee .coffee {
-        width: 100%;
-        margin: 5em 0 0 0;
+        display: block;
+        width: 280px;
     }
     #kaffee .keyboard{
-        margin-top: .5em;
-
+        margin: 0;
+        display: block;
     }
     #kaffee h4 {
         margin: .2em;
     }
     #cta {
         width: 50%;
-        height: 50vh;
-        padding: 3em 0 2em 0;
-        float: right;
-        margin-top: -26em;
-        margin-right: 1em;
-        clear: both;
+        display: flex;
+        justify-content: space-evenly;
     }
     #cta h3 {
         font-size: 1.5em;
-        margin-bottom: 2.8em;
+        margin: 0;
+    }
+    #cta .btn {
+        margin: 2rem 0;
     }
     #cta img {
-        margin-top: 3.8em;
+        display: block;
+        margin: 0;
     }
     #footer-area #info-1 input[type="submit"] {
-        width: 53%;
-    
+        width: 50%;
     }
 }
 
@@ -603,14 +624,19 @@ footer a:hover {
         }
         #action .container {
             display: flex;
+            height: 60vh;
         }
-        #kaffee {
-            margin-left: 2em;
+        div #kaffee {
+            margin: 0 2em;
+            height: 80vh;
+        }
+        #kaffee .coffee {
+            width: 320px;
         }
         #cta {
             margin:2em;
             width: 80%;
-            height: 60vh;
+            height: 50vh;
         }
         #cta button a{
             padding: .8em 4em;
@@ -619,13 +645,10 @@ footer a:hover {
             font-size: 1.8em;
             font-weight: bold;
         }
-        #cta img {
-            margin-top: em;
-        }
+    
         #footer-area .container {
             display: flex;
             flex-direction: row-reverse;
-            margin-top: 2rem;
         }
         #info {
 
@@ -759,7 +782,7 @@ footer a:hover {
             margin: 0 auto;
         }
         #cta .btn {
-            width: 50%;
+            width: 70%;
             margin: 0 auto;
         }
      
@@ -816,7 +839,9 @@ footer a:hover {
         }
         #cta h3 {
             font-size: 2.2em;
-
+        }
+        #cta button.btn {
+            width: 50%;
         }
         #footer-area .container {
             margin-top: 2em;

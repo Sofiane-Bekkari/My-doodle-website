@@ -1,0 +1,23 @@
+{
+  "name": "my-doodel-website",
+  "version": "1.0.0",
+  "description": "Doodel WebSite",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": " gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sofiane-Bekkari/My-doodle-website.git"
+  },
+  "author": "Sofiane Bekkari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sofiane-Bekkari/My-doodle-website/issues"
+  },
+  "homepage": "https://Sofiane-Bekkari.github.io/My-doodle-website"
+}
