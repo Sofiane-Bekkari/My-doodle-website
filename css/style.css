@@ -134,9 +134,10 @@ nav li a {
     margin: 0 auto;
     font-weight: bold;
 }
-h1 span {
+span#spe-word {
     color: var(--primary-color);
     font-style: normal;
+    font-size: 2rem;
     font-weight: bolder;
 }
 #showcase p {
@@ -298,10 +299,13 @@ h4 span {
     border-top-right-radius: 2em;
     border-top-left-radius: 2em;
     color: #ffffff;
-    padding: .5rem;
+    padding: 1rem;
+}
+#footer-area {
+    border: solid cyan;
+    padding-bottom: 4rem;
 }
 #footer-area h2 {
-    margin-top: 2em;
     margin-bottom: 0;
     padding-top: 1em;
 }
@@ -365,7 +369,7 @@ footer p , a , span {
 }
 footer a, span{
     transition: all .5s;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 footer a:hover {
     text-decoration: underline;
@@ -613,6 +617,9 @@ footer a#my-link:hover  {
         #showcase h1 {
             font-size: 2.5em;
         }
+        span#spe-word {
+            font-size: 2.4rem;
+        }
         #showcase p {
             margin-bottom: 3rem;
         }
@@ -700,6 +707,9 @@ footer a#my-link:hover  {
             font-size: 2.7em;
 
         }
+        span#spe-word {
+            font-size: 2.6rem;
+        }
         #showcase p {
             font-size: 1.3em;
             width: 100%;
@@ -785,6 +795,13 @@ footer a#my-link:hover  {
             width: 70%;
             margin: 0 auto;
         }
+        footer p {
+            font-size: .9rem;
+        }
+        footer a, span{
+            transition: all .5s;
+            font-size: .9rem;
+        }
      
     }
     /**  Last Lagest Media  **/
@@ -799,6 +816,9 @@ footer a#my-link:hover  {
         #showcase h1 {
             font-size: 3.4em;
             margin-top: 5rem;
+        }
+        span#spe-word {
+            font-size: 3.3rem;
         }
         #showcase p {
             font-size: 1.5em;
